@@ -2,7 +2,7 @@ FROM node:latest
 
 RUN echo "Cache"
 
-RUN git clone https://github.com/prerender/prerender.git /prerender
+RUN git clone https://github.com/PlaceAVote/prerender.git /prerender
 
 RUN cd /prerender; npm install
 
