@@ -2,14 +2,12 @@ deployment:
   development:
     branch: master
     commands:
-      - lein uberjar
       - convox login $CONVOX_GRID_HOST --password $CONVOX_API_KEY
       - convox switch development
       - convox deploy
   release:
     tag: /v[0-9]+(\.[0-9]+)*/
     commands:
-      - lein uberjar
       - convox login $CONVOX_GRID_HOST --password $CONVOX_API_KEY
       - convox switch production
       - convox deploy
