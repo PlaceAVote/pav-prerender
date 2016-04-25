@@ -1,3 +1,7 @@
+machine:
+  pre:
+    - curl -Ls https://install.convox.com/linux.zip > /tmp/convox.zip
+    - sudo unzip /tmp/convox.zip -d /usr/local/bin
 deployment:
   development:
     branch: master
